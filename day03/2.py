@@ -8,7 +8,7 @@ def group_sacks(rucksacks, size):
         yield rucksacks[i:i + size]
 
 def main():
-    groups = group_sacks([x for x in [set(r[:-1]) for r in sys.stdin]], 3)
+    groups = group_sacks([set(r[:-1]) for r in sys.stdin], 3)
     priorities = (string.ascii_letters.index(next(iter(set.intersection(*r)))) + 1
                   for r in groups)
     print(sum(priorities))
