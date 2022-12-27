@@ -1,0 +1,22 @@
+graph valves {
+AA [label="AA (0)"];
+AA -- DD;
+AA -- II;
+AA -- BB;
+BB [label="BB (13)"];
+BB -- CC;
+CC [label="CC (2)"];
+CC -- DD;
+DD [label="DD (20)"];
+DD -- EE;
+EE [label="EE (3)"];
+EE -- FF;
+FF [label="FF (0)"];
+FF -- GG;
+GG [label="GG (0)"];
+GG -- HH;
+HH [label="HH (22)"];
+II [label="II (0)"];
+II -- JJ;
+JJ [label="JJ (21)"];
+}
